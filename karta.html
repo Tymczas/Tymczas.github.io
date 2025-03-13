@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Karta Postaci - Ghelyn Foehammer</title>
+    <title>Karta Postaci - Wilhelm</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="card">
-      <!-- Nagłówek -->
-      <div class="header">
+    <main class="card">
+      <header class="header">
         <img src="avatar.jpg" alt="Postać" />
         <div>
           <h2 contenteditable="true" id="name">Ghelyn Foehammer</h2>
@@ -17,10 +16,9 @@
             Poziom 12 | Górski Krasnolud | Prawdziwie Neutralny
           </p>
         </div>
-      </div>
+      </header>
 
-      <!-- Statystyki -->
-      <div class="stats">
+      <section class="stats">
         <div class="stat">
           Siła
           <p contenteditable="true">15</p>
@@ -45,36 +43,32 @@
           Charyzma
           <p contenteditable="true">10</p>
         </div>
-      </div>
+      </section>
 
-      <!-- Status -->
-      <div class="section">
+      <section class="status">
         <h3>Status</h3>
         <p><b>Punkty życia:</b> <span contenteditable="true">55</span>/75</p>
         <p><b>Prędkość:</b> <span contenteditable="true">25 ft</span></p>
         <p><b>Inicjatywa:</b> <span contenteditable="true">+2</span></p>
         <p><b>KP:</b> <span contenteditable="true">15</span></p>
         <p><b>Odpornści:</b> <span contenteditable="true">Trucizna</span></p>
-      </div>
+      </section>
 
-      <!-- Umiejętności -->
-      <div class="section">
+      <section class="skills">
         <h3>Umiejętności</h3>
         <p>Akrobatyka (Zr): <span contenteditable="true">+2</span></p>
         <p>Atletyka (Sił): <span contenteditable="true">+6</span></p>
         <p>Percepcja (Mąd): <span contenteditable="true">+7</span></p>
         <p>Oszustwo (Cha): <span contenteditable="true">+0</span></p>
-      </div>
+      </section>
 
-      <!-- Testy śmierci -->
-      <div class="section">
+      <section class="death-saves">
         <h3>Testy śmierci</h3>
         <p>Sukcesy: <span contenteditable="true">0</span></p>
         <p>Porażki: <span contenteditable="true">0</span></p>
-      </div>
+      </section>
 
-      <!-- Zdolności -->
-      <div class="section">
+      <section class="abilities">
         <h3>Zdolności</h3>
         <ul id="abilities">
           <li>
@@ -91,10 +85,9 @@
         <input type="text" id="newAbilityName" placeholder="Nazwa zdolności" />
         <input type="text" id="newAbilityValue" placeholder="Wartość" />
         <button onclick="addAbility()">Dodaj</button>
-      </div>
+      </section>
 
-      <!-- Ekwipunek -->
-      <div class="section">
+      <section class="inventory">
         <h3>Wyposażenie</h3>
         <ul id="inventory">
           <li>
@@ -107,9 +100,8 @@
         </ul>
         <input type="text" id="newItem" placeholder="Dodaj przedmiot" />
         <button onclick="addItem()">Dodaj</button>
-      </div>
-    </div>
-
+      </section>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
