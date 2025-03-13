@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karta Postaci - Ghelyn Foehammer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <!-- Nagłówek -->
+      <div class="header">
+        <img src="avatar.jpg" alt="Postać" />
+        <div>
+          <h2 contenteditable="true" id="name">Ghelyn Foehammer</h2>
+          <p contenteditable="true" id="info">
+            Poziom 12 | Górski Krasnolud | Prawdziwie Neutralny
+          </p>
+        </div>
+      </div>
+
+      <!-- Statystyki -->
+      <div class="stats">
+        <div class="stat">
+          Siła
+          <p contenteditable="true">15</p>
+        </div>
+        <div class="stat">
+          Zręczność
+          <p contenteditable="true">14</p>
+        </div>
+        <div class="stat">
+          Kondycja
+          <p contenteditable="true">12</p>
+        </div>
+        <div class="stat">
+          Inteligencja
+          <p contenteditable="true">12</p>
+        </div>
+        <div class="stat">
+          Mądrość
+          <p contenteditable="true">17</p>
+        </div>
+        <div class="stat">
+          Charyzma
+          <p contenteditable="true">10</p>
+        </div>
+      </div>
+
+      <!-- Status -->
+      <div class="section">
+        <h3>Status</h3>
+        <p><b>Punkty życia:</b> <span contenteditable="true">55</span>/75</p>
+        <p><b>Prędkość:</b> <span contenteditable="true">25 ft</span></p>
+        <p><b>Inicjatywa:</b> <span contenteditable="true">+2</span></p>
+        <p><b>KP:</b> <span contenteditable="true">15</span></p>
+        <p><b>Odpornści:</b> <span contenteditable="true">Trucizna</span></p>
+      </div>
+
+      <!-- Umiejętności -->
+      <div class="section">
+        <h3>Umiejętności</h3>
+        <p>Akrobatyka (Zr): <span contenteditable="true">+2</span></p>
+        <p>Atletyka (Sił): <span contenteditable="true">+6</span></p>
+        <p>Percepcja (Mąd): <span contenteditable="true">+7</span></p>
+        <p>Oszustwo (Cha): <span contenteditable="true">+0</span></p>
+      </div>
+
+      <!-- Testy śmierci -->
+      <div class="section">
+        <h3>Testy śmierci</h3>
+        <p>Sukcesy: <span contenteditable="true">0</span></p>
+        <p>Porażki: <span contenteditable="true">0</span></p>
+      </div>
+
+      <!-- Zdolności -->
+      <div class="section">
+        <h3>Zdolności</h3>
+        <ul id="abilities">
+          <li>
+            <span contenteditable="true">🌀 Dzika Forma</span>:
+            <span contenteditable="true">1/2</span>
+            <button onclick="removeAbility(this)">Usuń</button>
+          </li>
+          <li>
+            <span contenteditable="true">👁 Oczy Grobu</span>:
+            <span contenteditable="true">3/3</span>
+            <button onclick="removeAbility(this)">Usuń</button>
+          </li>
+        </ul>
+        <input type="text" id="newAbilityName" placeholder="Nazwa zdolności" />
+        <input type="text" id="newAbilityValue" placeholder="Wartość" />
+        <button onclick="addAbility()">Dodaj</button>
+      </div>
+
+      <!-- Ekwipunek -->
+      <div class="section">
+        <h3>Wyposażenie</h3>
+        <ul id="inventory">
+          <li>
+            ⚔️ Kuźniczy Młot <button onclick="removeItem(this)">Usuń</button>
+          </li>
+          <li>🌿 Sierp <button onclick="removeItem(this)">Usuń</button></li>
+          <li>
+            🎯 Darty (4x) <button onclick="removeItem(this)">Usuń</button>
+          </li>
+        </ul>
+        <input type="text" id="newItem" placeholder="Dodaj przedmiot" />
+        <button onclick="addItem()">Dodaj</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
